@@ -1,0 +1,60 @@
+div.view {
+    position: relative;
+}
+
+div.view img {
+    width: 100%; 
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+img.haupt {
+    z-index: 1;
+    opacity: 1;
+}
+
+img.trans {
+    z-index: 2;
+    opacity: 0;
+    -webkit-transition: opacity 1s ease-in-out;
+    -moz-transition: opacity 1s ease-in-out;
+}
+
+img.front {
+    z-index: 3;
+    opacity: 1;
+}  
+
+img.small {
+    z-index: 0;
+    opacity: 1;
+} 
+
+div.preview { 
+    overflow: hidden;
+    position: relative;
+}
+
+div.slide {
+    position: absolute;
+    -webkit-transition:all 0.5s ease-out;
+    -moz-transition:all 0.5s ease-out;
+}
+
+div.preview img {
+    width: 100px;
+    margin: 0px 20px 20px 20px;
+    position: absolute;
+    bottom: 0px;
+    float: left;
+    -webkit-transition:all 0.5s ease-in-out;
+    -moz-transition:all 0.5s ease-in-out;
+}
+
+div.preview img:hover {
+    width: 140px;
+    margin: 0px 0px 0px 0px;
+}
+
+/* kate: space-indent on; indent-width 4; mixedindent off; indent-mode cstyle; dynamic-word-wrap on; line-numbers on; */
